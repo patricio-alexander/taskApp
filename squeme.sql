@@ -1,0 +1,11 @@
+CREATE DATABASE tasksDB;
+USE tasksDB;
+
+CREATE TABLE tasks(
+    taskId INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(20) NOT NULL,
+    description VARCHAR(300) NOT NULL,
+    status VARCHAR(20) DEFAULT 'pendiente'
+);
+
+
